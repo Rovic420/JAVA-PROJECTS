@@ -7,19 +7,19 @@ public class Main {
     
     public static void main(String[] args) {
         Main persona = new Main();
-        Scanner scanner = new Scanner(System.in); // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
 
         // Ask for user input
         System.out.print("Enter your first name: ");
-        persona.fname = scanner.nextLine(); // Read user input for first name
+        persona.fname = scanner.nextLine();
 
         System.out.print("Enter your last name: ");
-        persona.lname = scanner.nextLine(); // Read user input for last name
+        persona.lname = scanner.nextLine();
 
         // Print out the user's name and age
         System.out.println("My name is: " + persona.fname + " " + persona.lname);
         System.out.println("My age is: " + persona.age);
 
-        scanner.close(); // Close the scanner to avoid resource leaks
+        scanner.close();
     }
 }
